@@ -57,6 +57,7 @@ const Navbar = () => {
 	}, [screenSize]);
 
 	const handleActiveMenu = () => setActiveMenu(!activeMenu);
+
 	return (
 		<div className='flex justify-between p-2 md:ml-6 md:mr-6 relative'>
 			<NavButton
@@ -65,7 +66,6 @@ const Navbar = () => {
 				color={currentColor}
 				icon={<AiOutlineMenu />}
 			/>
-
 			<div className='flex'>
 				<NavButton
 					title='Cart'
@@ -87,7 +87,6 @@ const Navbar = () => {
 					color={currentColor}
 					icon={<RiNotification3Line />}
 				/>
-
 				<TooltipComponent content='Profile' position='BottomCenter'>
 					<div
 						className='flex items-center gap-2 cursor-pointer p-1 hover:bg-light-gray rounded-lg'
